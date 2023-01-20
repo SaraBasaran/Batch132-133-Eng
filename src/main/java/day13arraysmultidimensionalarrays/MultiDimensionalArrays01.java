@@ -36,6 +36,29 @@ public class MultiDimensionalArrays01 {
         //how to print the elements one by one
         System.out.println(arr[2][1]);//11
 
+        //How to use different number of elements in inner Arrays.
+        int [][] brr= {{12, 45}, {33}, {76, 3, -34}};
+        System.out.println(Arrays.deepToString(brr)); //[[12, 45], [33], [76, 3, -34]]
+
+        //Example 1: type code to find the sum of all elements in an integer multidimensional array.
+
+        int[][] crr= {{5, 34}, {12, 98, -7}};
+
+        int sum=0;
+
+        for(int[] w: crr){
+
+            for(int u: w){
+
+             sum= sum + u;//142
+
+
+            }
+
+        }
+        System.out.println(sum);
+
+
 
 
 
